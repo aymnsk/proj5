@@ -4,12 +4,12 @@
 }
 @font-face {
     font-family: neu;
-    font-weight: 100;
+    font-weight: 200;
     src: url(./NeueHaasDisplayLight.ttf);
 }
 @font-face {
     font-family: neu;
-    font-weight: 200;
+    font-weight: 100;
     src: url(./NeueHaasDisplayRoman.ttf);
 }
 
@@ -233,4 +233,50 @@ nav{
     font-size: 4vw;
     width: 60%;
     line-height: 4vw;
+    z-index: 9;
 }
+#bottom-part2 {
+    width: 20%;
+}
+#bottom-part2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+#bottom-part2 p {
+    font-weight: 200;
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+#page2 #gooey {
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right,#ff2d03, #ff5c0b );
+    top: 58%;
+    left: 25%;
+    filter: blur(25px);
+    animation-name: gooey;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes gooey {
+    from {
+        filter: blur(20px);
+        transform: translate(10%,-10%) skew(0);
+    }
+    to { 
+        filter: blur(30px);
+        transform: translate(-10%,10%) skew(-12deg);
+    }
+    
+}
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 4vw 0;
+}
+
