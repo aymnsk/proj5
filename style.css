@@ -175,6 +175,62 @@ nav{
     }
 
 }
-#Page2 {
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    background: #EFEAE3;
+    padding: 8vw 0;
+    position: relative;
+}
+#moving-text {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+/* #moving-text::-webkit-scrollbar {
+    display: none;
+} */
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+}
+#gola {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #FE320A;
+    margin: 1vw 2vw;
+}
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
     
+}
+#page2-bottom {
+    height: 80vh;
+    width: 100%;
+    padding: 4.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+#page2-bottom h1 {
+    font-size: 4vw;
+    width: 60%;
+    line-height: 4vw;
 }
